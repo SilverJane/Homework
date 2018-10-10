@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema1" xmlns:tns="http://www.example.org/NewXMLSchema1" elementFormDefault="qualified">
+ <xs:element name = "Devices">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name = "Device" maxOccurs = "unbounded" minOccurs = "1">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name = "name">
+        <xs:simpletype>
+         <xs:restricition base = "xs:string">
+          <xs:maxLength value = "100"/>
+         </xs:restricition>
+        </xs:simpletype>
+       </xs:element>
+           <xs:element name = "origin">
+             <xs:simpleType>
+                <xs:restriction base = "xs:string">
+                   <xs:maxLength value = "100"/>
+                </xs:restriction>
+             </xs:simpleType>
+           </xs:element>
+      <xs:element name = "price">
+         <xs:simpleType>
+            <xs:restriction base = "xs:int">
+                <xs:maxLength value = "100"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:element>
+         <xs:element name = "type">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name = "per">
+                    <xs:simpleType>
+                       <xs:restriction base = "xs:string">
+                          <xs:maxLength value = "10"/>
+                       </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                    <xs:element name = "vatt">
+                       <xs:simpleType>
+                          <xs:restriction base = "xs:string">
+                             <xs:maxLength value = "100"/>
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                      <xs:element name = "kuller">
+                         <xs:simpleType>
+                            <xs:restriction base = "xs:string">
+                               <xs:maxLength value = "100"/>
+                            </xs:restriction>
+                         </xs:simpleType>
+                      </xs:element>
+                       <xs:element name = "complect">
+                           <xs:complexType>
+                               <xs:sequence>
+                                   <xs:element name = "inoutput">
+                                      <xs:simpleType>
+                                        <xs:restriction base = "xs:string">
+                                            <xs:maxLength value = "100"/>
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                   </xs:element>
+                                     <xs:element name = "multimedia">
+                                       <xs:simpleType>
+                                          <xs:restriction base = "xs:string">
+                                             <xs:maxLength value = "40"/>
+                                          </xs:restriction>
+                                       </xs:simpleType>
+                                     </xs:element> 
+                               </xs:sequence>
+                           </xs:complexType>
+                       </xs:element>
+                           <xs:element name = "ports">
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name = "com">
+                                        <xs:simpleType>
+                                           <xs:restriction base = "xs:string">
+                                              <xs:maxLength value = "10"/>
+                                           </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                       <xs:element name = "usb">
+                                          <xs:simpleType>
+                                             <xs:restriction base = "xs:string">
+                                                <xs:maxLength value = "10"/>
+                                             </xs:restriction>
+                                          </xs:simpleType>
+                                       </xs:element>
+                                          <xs:element name = "lpt">
+                                             <xs:simpleType>
+                                               <xs:restriction base = "xs:string">
+                                                  <xs:maxLength value = "10"
+                                               </xs:restriction>
+                                             </xs:simpleType>
+                                          </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
+                                     <xs:element name = "critical">
+                                        <xs:simpleType>
+                                           <xs:restriction base = "xs:string"></xs:restriction>
+                                              <xs:maxLength value = "100"/>
+                                        </xs:simpleType>
+                                     </xs:element>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>

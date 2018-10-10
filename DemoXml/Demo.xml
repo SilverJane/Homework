@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Devices>
+  <Device>
+    <name>Computer</name>
+    <origin>Japan</origin>
+    <price>36000_dollars</price>
+      <type>
+        <per>yes</per>
+        <vatt>220</vatt>
+        <kuller>yes</kuller>
+          <complect>
+             <inoutput>no</inoutput>
+             <multimedia>yes</multimedia>
+          </complect>
+        <ports>
+        <com>no</com>
+        <usb>yes</usb>
+        <lpt>no</lpt>
+        </ports>
+    <critical>no</critical>
+      </type>
+  </Device>
+  
+  
+  <Device>
+  <name>mobile_phone</name>
+  <origin>Germany</origin>
+  <price>300_dollers</price>
+  <type>
+     <per>yes</per>
+     <vatt>25</vatt>
+     <kuller>no</kuller>
+     <complect>
+        <inoutput>no</inoutput>
+        <multimedia>yes</multimedia>
+     </complect>
+   <ports> 
+     <com>no</com>
+     <usb>no</usb>
+     <lpt>no</lpt>
+   </ports>
+  <critical>yes</critical> 
+  </type>
+  </Device>
+  
+  <Device>
+  <name>Mp3Player</name>
+  <origin>USA</origin>
+  <price>20_dollars</price>
+  <type>
+  <per>yes</per>
+  <vatt>25</vatt>
+  <kuller>no</kuller>
+       <complect>
+          <inoutput>yes</inoutput>
+          <multimedia>yes</multimedia>
+       </complect>
+    <ports>
+       <com>no</com>
+       <lpt>no</lpt>
+       <usb>yes</usb>
+    </ports>
+    <critical>no</critical>
+  </type>
+  </Device>
+</Devices>
